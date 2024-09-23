@@ -1,0 +1,156 @@
+body {
+    font-family: "Quicksand", sans-serif;
+    color: #F27BBD;
+    text-align: center;
+    margin: 0;
+    background-color: white;
+}
+
+.intro-container {
+    display: flex;              
+    align-items: center;    
+    justify-content: center;     
+    width: 100%; 
+    padding: 0;
+    height: 750px;
+    background-image: url('./assets/images/intro-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+h1 {
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 10rem;
+    margin: 1rem auto 0 auto;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 1);
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    padding-bottom: 1rem;
+}
+.content {
+    display: flex;
+    flex-direction: column;     
+    margin-right: 1.5rem;      
+    text-align: center;        
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.side-icon {
+    border-radius: 8%;
+}
+.top-icon, .bottom-icon, .side-icon {
+    max-width: 100%;            
+    height: auto;               
+}
+
+.middle-container {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, auto); 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.education, .work-experience, .skills, .certification {
+    padding: 20px; 
+    text-align: left;
+}
+
+.cat {
+    display: flex;
+    justify-content: left;
+    margin-left: 4rem;
+    margin-top: -6rem;
+}
+
+.project-container {
+    background-color: #882BF9;
+}
+
+.project {
+    max-width: 60%;
+    padding-bottom: 2rem;
+}
+
+.about-section {
+    background-color: white;
+}
+
+.footer {
+    background-color: #882BF9;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+}
+
+
+/* MEDIA QUERIES MUST BE AT BOTTOM*/
+
+@media (max-width: 1260px) {
+    .cat {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 792px) {
+    .intro-container {
+        flex-direction: column;   
+        align-items: center;       
+
+    }
+
+    h1 {
+        font-size: 5.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        padding-top: 2.25rem;
+
+    }
+
+    .middle-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .project-container, .about-section, .footer {
+        width: 100%; 
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .content {
+        margin-right: 0;         
+        text-align: center;       
+    }
+
+    .side-icon {
+        margin-top: 1rem;         
+        max-width: 80%;           
+        padding: 0;
+    }
+
+    .cat {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0; 
+        padding: 20px; 
+    }
+}
+
+
+
+
